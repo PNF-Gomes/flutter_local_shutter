@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # local_shutter_flutter
 
-A new Flutter application. For shutter localization
+A new Flutter application. For shutter localization and timming
 
 ## Getting Started
 

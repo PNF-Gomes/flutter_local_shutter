@@ -23,13 +23,13 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(width: 10,),
                 Expanded(
-                  child: HomePageCard(text: 'Qr',BackgroundImage: 'images/qr.jpg',),
+                  child: HomePageCard(text: 'Pagamentos',BackgroundImage: 'images/qr.jpg',),
                 )
               ],
             ),
           ),
           SizedBox(height: 10,),
-          Expanded(child: HomePageCard(text: 'Bus Tracker', BackgroundImage: 'images/bus_tracker.jpeg',)),
+          Expanded(child: HomePageCard(text: 'Posição dos autocarros', BackgroundImage: 'images/bus_tracker.jpeg',)),
           SizedBox(height: 10,),
           Expanded(child: HomePageCard(text: 'Horarios',BackgroundImage: 'images/horarios.jpg',),),
           SizedBox(height: 10),

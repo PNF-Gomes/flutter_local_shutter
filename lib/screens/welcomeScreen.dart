@@ -19,6 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     InfoScreen(),
     HomeScreen(),
     MapScreen(),
+    //HomeScreen()
 
   ];
   @override

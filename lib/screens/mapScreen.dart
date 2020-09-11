@@ -22,6 +22,7 @@ class _MapScreenState extends State<MapScreen> {
       position: LatLng(40.288196, -7.504253),)
   };
 
+  //TODO async and wait round icon
   @override
   Widget build(BuildContext context) {
     //TODO map view

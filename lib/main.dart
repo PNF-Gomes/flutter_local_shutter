@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:local_shutter_flutter/screens/homeScreen.dart';
 import 'package:local_shutter_flutter/screens/infoScreen.dart';
+import 'package:local_shutter_flutter/screens/shutterKeeperScreen.dart';
 import 'screens/welcomeScreen.dart';
 import 'screens/mapScreen.dart';
 
@@ -13,12 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: WelcomeScreen.id,
+      initialRoute: ShutterKeeperScreen.id,
       routes: {
         WelcomeScreen.id : (context) => WelcomeScreen(),
         InfoScreen.id : (context) => InfoScreen(),
         MapScreen.id : (context) => MapScreen(),
         HomeScreen.id : (context) => HomeScreen(),
+        ShutterKeeperScreen.id : (context) => ShutterKeeperScreen(),
 
       },
     );

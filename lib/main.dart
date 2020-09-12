@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:local_shutter_flutter/screens/homeScreen.dart';
-import 'package:local_shutter_flutter/screens/infoScreen.dart';
+import 'package:local_shutter_flutter/screens/homeTabs/homeScreen.dart';
+import 'package:local_shutter_flutter/screens/homeTabs/infoScreen.dart';
 import 'package:local_shutter_flutter/screens/shutterKeeperScreen.dart';
 import 'screens/welcomeScreen.dart';
-import 'screens/mapScreen.dart';
+import 'screens/homeTabs/mapScreen.dart';
 
 void main() {
   runApp(MyApp());

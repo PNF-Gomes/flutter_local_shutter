@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SizedBox(height: 10,),
-          Expanded(child: HomePageCard(text: 'Posição dos autocarros', backgroundImage: 'images/bus_tracker.jpeg',)),
+          Expanded(child: HomePageCard(text: 'MyBus', backgroundImage: 'images/bus_tracker.jpeg',)),
           SizedBox(height: 10,),
           Expanded(child: HomePageCard(text: 'Horarios',backgroundImage: 'images/horarios.jpg',),),
           SizedBox(height: 10),

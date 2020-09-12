@@ -1,6 +1,12 @@
+
+//TODO codigo modelo, refazer tudo
+
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:local_shutter_flutter/constants.dart';
+import 'package:local_shutter_flutter/screens/welcomeScreen.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class ShutterKeeperScreen extends StatefulWidget {
@@ -12,7 +18,7 @@ class ShutterKeeperScreen extends StatefulWidget {
 class _ShutterKeeperScreenState extends State<ShutterKeeperScreen> {
   List <Widget> timeLineTiles = [
     TimelineTile(
-      isFirst: true,
+      isFirst: false,
       alignment: TimelineAlign.left,
       indicatorStyle: IndicatorStyle(
         color: Colors.purple,
@@ -213,6 +219,9 @@ class _ShutterKeeperScreenState extends State<ShutterKeeperScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.pushNamed(context, WelcomeScreen.id);
+        },
         backgroundColor: kFirstColor,
         child: Icon(
           Icons.home,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:local_shutter_flutter/screens/homeScreen.dart';
-import 'package:local_shutter_flutter/screens/mapScreen.dart';
-import 'package:local_shutter_flutter/screens/infoScreen.dart';
+import 'package:local_shutter_flutter/screens/homeTabs/homeScreen.dart';
+import 'package:local_shutter_flutter/screens/homeTabs/mapScreen.dart';
+import 'package:local_shutter_flutter/screens/homeTabs/infoScreen.dart';
 import 'package:local_shutter_flutter/constants.dart';
 
 class WelcomeScreen extends StatefulWidget {

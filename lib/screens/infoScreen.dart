@@ -4,11 +4,18 @@ import 'package:flutter/painting.dart';
 import 'package:local_shutter_flutter/components/infoCard.dart';
 
 
-class InfoScreen extends StatelessWidget {
+class InfoScreen extends StatefulWidget {
+
+   static const String id = 'infoScreen';
   const InfoScreen({
     Key key,
   }) : super(key: key);
 
+  @override
+  _InfoScreenState createState() => _InfoScreenState();
+}
+
+class _InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(

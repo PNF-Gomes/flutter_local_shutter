@@ -3,6 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 
 class MapScreen extends StatefulWidget {
+  static const String id = 'mapScreen';
   const MapScreen({
     Key key,
   }) : super(key: key);
@@ -36,6 +37,8 @@ class _MapScreenState extends State<MapScreen> {
             zoom: 19.151926040649414,
 
         ),
+
+        trafficEnabled: false,
 
 
       ),

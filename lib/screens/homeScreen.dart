@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:local_shutter_flutter/components/homePageCard.dart';
 
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  static const String id  = 'homeScreen';
   const HomeScreen({
     Key key,
   }) : super(key: key);
 
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(color: Colors.white,
@@ -14,24 +20,24 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded( 
+          Expanded(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
-                  child: HomePageCard(text: 'Meteo', BackgroundImage: 'images/meteo.jpg',),
+                  child: HomePageCard(text: 'Meteo', backgroundImage: 'images/meteo.jpg',),
                 ),
                 SizedBox(width: 10,),
                 Expanded(
-                  child: HomePageCard(text: 'Pagamentos',BackgroundImage: 'images/qr.jpg',),
+                  child: HomePageCard(text: 'Pagamentos',backgroundImage: 'images/qr.jpg',),
                 )
               ],
             ),
           ),
           SizedBox(height: 10,),
-          Expanded(child: HomePageCard(text: 'Posição dos autocarros', BackgroundImage: 'images/bus_tracker.jpeg',)),
+          Expanded(child: HomePageCard(text: 'Posição dos autocarros', backgroundImage: 'images/bus_tracker.jpeg',)),
           SizedBox(height: 10,),
-          Expanded(child: HomePageCard(text: 'Horarios',BackgroundImage: 'images/horarios.jpg',),),
+          Expanded(child: HomePageCard(text: 'Horarios',backgroundImage: 'images/horarios.jpg',),),
           SizedBox(height: 10),
         ],
       ),

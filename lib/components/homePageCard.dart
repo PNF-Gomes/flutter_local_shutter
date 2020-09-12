@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:local_shutter_flutter/constants.dart';
 
 class HomePageCard extends StatelessWidget {
   HomePageCard(
-      {this.text, this.BackgroundImage, this.cardColor, this.function});
+      {this.text, this.backgroundImage, this.cardColor, this.function});
 
   Color cardColor;
-  String BackgroundImage;
+  String backgroundImage;
   String text;
   Function function;
 
@@ -26,9 +27,9 @@ class HomePageCard extends StatelessWidget {
                 color: cardColor,
                 image: DecorationImage(
                   colorFilter: ColorFilter.mode(
-                      Colors.green.withOpacity(0.4), BlendMode.dstATop),
+                      kFirstColor.withOpacity(0.5), BlendMode.dstATop),
                   image: AssetImage(
-                    BackgroundImage,
+                    backgroundImage,
                   ),
                   fit: BoxFit.cover,
                 )),
@@ -38,10 +39,7 @@ class HomePageCard extends StatelessWidget {
           child: Container(
             child: Text(
               text,
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
+              style: kHomeCardText,
             ),
           ),
         )

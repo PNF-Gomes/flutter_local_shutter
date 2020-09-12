@@ -4,13 +4,19 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:local_shutter_flutter/screens/homeScreen.dart';
 import 'package:local_shutter_flutter/screens/mapScreen.dart';
 import 'package:local_shutter_flutter/screens/infoScreen.dart';
+import 'package:local_shutter_flutter/constants.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  static const String id = 'welcomeScreen';
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
 
+
+
 class _WelcomeScreenState extends State<WelcomeScreen> {
+
+
 
   int _pageIndex = 1;
 
@@ -40,25 +46,29 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               child: GNav(
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 gap: 8,
-                activeColor: Colors.white,
+                activeColor: kSecondColors,
                 iconSize: 24,
                 duration: Duration(seconds: 1),
 
-                tabBackgroundColor: Colors.grey,
+                tabBackgroundColor: kFirstColor,
 
                 tabs: [
                   GButton(
                     icon: Icons.info,
                     text: 'info',
+                    iconColor: kFirstColor,
 
                   ),
                   GButton(
                     icon: Icons.home,
                     text: 'home',
+                    textColor: kSecondColors,
+                    iconColor: kFirstColor,
                   ),
                   GButton(
                     icon: Icons.airport_shuttle,
                     text: 'mapa',
+                    iconColor: kFirstColor,
                   ),
 
                 ],

@@ -1,1 +1,1 @@
-Unfinished prototype of a shutter app with Flutter
+Prototype of a shutter app with Flutter
